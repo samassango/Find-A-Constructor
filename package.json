@@ -1,0 +1,36 @@
+{
+  "name": "find-a-constructor",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "This app will help finding construction and maintenance works with easy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samassango/Find-A-Constructor.git"
+  },
+  "keywords": [
+    "find",
+    "Construction",
+    "worker",
+    "plumber",
+    "builder",
+    "electrician",
+    "roof",
+    "specialist"
+  ],
+  "author": "Sibusiso Massango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samassango/Find-A-Constructor/issues"
+  },
+  "homepage": "https://github.com/samassango/Find-A-Constructor#readme",
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  }
+}
