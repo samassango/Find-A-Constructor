@@ -8,7 +8,9 @@
   "description": "This app will help finding construction and maintenance works with easy.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx lerna run dev",
+    "test": "npx lerna run test",
+    "build":"npx lerna run build"
   },
   "repository": {
     "type": "git",

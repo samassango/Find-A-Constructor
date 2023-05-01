@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "This api server find-a-constructor client with information stored in the database. It will intergrate with mongodb as the main source of thruth \u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b[C\u001b[C\u001bruth for data Input and output.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest test",
     "build": "npx tsc",
@@ -24,11 +24,21 @@
   },
   "homepage": "https://github.com/samassango/Find-A-Constructor#readme",
   "devDependencies": {
+    "@types/cors": "^2.8.13",
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@apollo/server": "^4.7.0",
+    "@graphql-tools/merge": "^8.4.1",
+    "@graphql-tools/schema": "^9.0.19",
     "@types/express": "^4.17.17",
+    "@types/node": "^18.16.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^5.3.0"
   }
 }
