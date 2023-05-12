@@ -11,8 +11,8 @@ const LoginScreen: React.FC = () => {
           <button type="submit">Login</button>
         </form>
          <div className="links">
-            <a href="#">Register</a>
-            <a href="#">Forgot Password</a>
+            <a href="/register">Register</a>
+            <a href="/user-reset">Forgot Password</a>
         </div>
       </div>
      

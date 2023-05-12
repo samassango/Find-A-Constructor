@@ -6,9 +6,7 @@ const AppLayout: React.FC<any> =({ children })=>{
     <div className="app-container">
         <Header/>
 
-        {/* <main> */}
             {children}
-        {/* </main> */}
 
         <footer className="moving-footer">
             <div className="moving-content">
