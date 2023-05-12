@@ -1,9 +1,13 @@
 import React from 'react';
 import './styles.css';
+
 import LoginScreen from '../login';
+import Header from '../../components/Header';
+
 const LandingPage: React.FC = () => {
   return (
     <div className="landing-page">
+      <Header/>
       <div className="overlay">
         <div className="overlay-layout">
           <div className="left-side-panel">
