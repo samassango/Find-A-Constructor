@@ -2,8 +2,6 @@ import React from 'react'
 import { Routes, Route,  Link } from "react-router-dom";
 import LandingPage from '../pages/LandingPage';
 import FallBackPage from '../pages/FallBackPage';
-import UserResetPage from '../pages/UserResetPage';
-import RegisterPage from '../pages/RegisterPage';
 
 const Services = React.lazy(() => import("../pages/Services"));
 const Mission = React.lazy(() => import("../pages/Mission"));
