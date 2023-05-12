@@ -1,0 +1,65 @@
+.landing-page {
+    background-image: url('../../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  .overlay-layout{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+  }
+  .overlay-layout .left-side-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .overlay  .overlay-layout .left-side-panel h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay  .overlay-layout .left-side-panel p {
+    font-size: 18px;
+  }
+
+  .moving-footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .moving-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation: moveLeftToRight 20s linear infinite;
+  }
+ 
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
