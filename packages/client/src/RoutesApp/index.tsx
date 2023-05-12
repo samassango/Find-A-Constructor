@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route,  Link } from "react-router-dom";
 import LandingPage from '../pages/LandingPage';
+import FallBackPage from '../pages/FallBackPage';
 
 const Services = React.lazy(() => import("../pages/Services"));
 const Mission = React.lazy(() => import("../pages/Mission"));
@@ -18,7 +19,7 @@ const RoutesApp = ()=>{
         <Route
                 path="/"
                 element={
-                <React.Suspense fallback={<>Error: Fail to load Login. Reported to the Support Team</>}>
+                <React.Suspense fallback={<FallBackPage serviceName='Home'/>}>
                     <LandingPage />
                 </React.Suspense>
                 }
@@ -26,7 +27,7 @@ const RoutesApp = ()=>{
            <Route
                 path="services"
                 element={
-                <React.Suspense fallback={<>Error: Fail to load Services. Reported to the Support Team</>}>
+                <React.Suspense fallback={<FallBackPage serviceName='Services'/>}>
                     <Services />
                 </React.Suspense>
                 }
@@ -34,7 +35,7 @@ const RoutesApp = ()=>{
             <Route
                 path="mission"
                 element={
-                <React.Suspense fallback={<>Error: Fail to load Mission. Reported to the Support Team</>}>
+                <React.Suspense fallback={<FallBackPage serviceName='Mission'/>}>
                     <Mission />
                 </React.Suspense>
                 }
@@ -42,7 +43,7 @@ const RoutesApp = ()=>{
             <Route
                 path="pricing"
                 element={
-                <React.Suspense fallback={<>Error: Fail to load Pricing. Reported to the Support Team</>}>
+                <React.Suspense fallback={<FallBackPage serviceName='Pricing'/>}>
                     <Pricing />
                 </React.Suspense>
                 }
@@ -53,6 +54,7 @@ const RoutesApp = ()=>{
                 <NoMatch/>
                 }
             />
+
        </Routes>
     )
 }
