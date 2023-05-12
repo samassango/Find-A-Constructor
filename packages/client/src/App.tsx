@@ -1,8 +1,11 @@
 // import './App.css'
+import { BrowserRouter } from 'react-router-dom'
 import AppClient from './pages/AppClient'
 function App() {
   return (
-     <AppClient/>
+  <BrowserRouter>
+    <AppClient/>
+  </BrowserRouter>
   )
 }
 

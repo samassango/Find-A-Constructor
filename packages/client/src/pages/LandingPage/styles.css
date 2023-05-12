@@ -1,7 +1,4 @@
-.landing-page {
-    background-image: url('../../assets/bg.png');
-    background-size: cover;
-    background-position: center;
+.landing-page { 
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -36,30 +33,3 @@
   .overlay  .overlay-layout .left-side-panel p {
     font-size: 18px;
   }
-
-  .moving-footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .moving-content {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    animation: moveLeftToRight 20s linear infinite;
-  }
- 
-  @keyframes moveLeftToRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  

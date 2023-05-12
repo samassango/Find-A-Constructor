@@ -1,36 +1,52 @@
 .pricing-component {
     display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
   }
   
   .package {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #ccc;
     padding: 20px;
-    width: 30%;
+    width: 20%;
+    height: 50%;
     text-align: center;
+    margin: 20px;
+    border-radius: 5%;
   }
   
   .package h2 {
     font-size: 24px;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .package ul {
-    list-style: none;
-    padding: 0;
+    padding: 15px;
   }
   
   .package li {
     margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .package button {
     background-color: #007bff;
     color: #fff;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: auto;
   }
   

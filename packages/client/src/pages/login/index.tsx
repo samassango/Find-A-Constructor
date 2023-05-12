@@ -10,11 +10,12 @@ const LoginScreen: React.FC = () => {
           <input type="password" className="input"  placeholder="Password" />
           <button type="submit">Login</button>
         </form>
+         <div className="links">
+            <a href="#">Register</a>
+            <a href="#">Forgot Password</a>
+        </div>
       </div>
-      <div className="links">
-        <a href="#">Register</a>
-        <a href="#">Forgot Password</a>
-      </div>
+     
     </div>
   );
 };

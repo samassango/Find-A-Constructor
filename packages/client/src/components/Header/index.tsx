@@ -1,6 +1,7 @@
 import Logo from '../../assets/logo.png'
 import React from 'react';
 import './style.css'
+import { Outlet, Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -10,11 +11,12 @@ const Header: React.FC = () => {
       </div>
       <nav className="navigation">
         <ul> 
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Pricing</a></li>
+          <li><Link to='/mission' >Mission</Link></li>
+          <li><Link to='/services' >Services</Link></li>
+          <li><Link to='/pricing' >Pricing</Link></li>
         </ul>
       </nav>
+      <Outlet />
     </header>
   );
 };

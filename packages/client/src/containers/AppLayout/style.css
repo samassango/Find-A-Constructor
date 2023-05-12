@@ -1,0 +1,42 @@
+.app-container {
+  background-image: url('../../assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  }
+  main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .moving-footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .moving-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation: moveLeftToRight 20s linear infinite;
+  }
+ 
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  

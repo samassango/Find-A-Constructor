@@ -1,10 +1,10 @@
 import React from "react";
-import LandingPage from "../LandingPage";
 import './style.css'
+import RoutesApp from "../../RoutesApp";
 const AppClient:React.FC<any> =()=>{
     return (
         <div className="container">
-           <LandingPage/>
+           <RoutesApp/>
         </div>
     )
 }
